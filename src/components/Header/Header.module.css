@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 7.5px 20px;
+    background-color: #FFFFFF;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.countBubble {
+    background-color: white;
+    color: #1a1a1a;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.titleText {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #F7F7F7;
+    padding: 0.2em 0 0.2em 0.5em;
+    width: 209px;
+    height: 33px;
+    border-radius: 31px;
+}
+.highlight {
+    background-color: #54B46A;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    width: 209px;
+    height: 33px;
+    border-radius: 31px;
+    margin-left: 0.5em;
+    color: #fff;
+}
+.btn {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #54B46A;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}

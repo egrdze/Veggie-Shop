@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.card {
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imageWrapper {
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.name {
+    font-weight: 600;
+    margin: 0;
+}
+
+.weight {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.inlineTitle {
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inlineWeight {
+    color: #888;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.quantityButton {
+    width: 30px;
+    height: 30px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 4px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.bottomRow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.cartButton {
+    background-color: #e8faed;
+    color: #2e7d32;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    width: 100%;
+}

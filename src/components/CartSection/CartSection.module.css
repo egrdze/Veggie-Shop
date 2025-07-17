@@ -1,0 +1,123 @@
+.cartContainerEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 301px;
+    height: 225px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.cartContainer {
+    width: 444px;
+    height: 268px;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.wholeContainer {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+    padding-top: 12px;
+    margin-right: 20px;
+}
+.emptyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.cartEmptyImg {
+    width: 160px;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.emptyText {
+    font-size: 18px;
+    color: #8b8f97;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.itemImage {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.itemDetails {
+    flex-grow: 1;
+    margin: 0 12px;
+}
+
+.nameLine {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.productName {
+    font-weight: bold;
+}
+
+.weight {
+    color: #777;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantityControl button {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f1f3;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.divider {
+    margin: 12px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.totalRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
