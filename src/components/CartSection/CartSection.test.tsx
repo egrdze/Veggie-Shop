@@ -18,6 +18,7 @@ describe('CartSection', () => {
                 cartItems={[]}
                 onIncrease={() => {}}
                 onDecrease={() => {}}
+                onClearCart={() => {}}
             />
         );
 
@@ -30,6 +31,7 @@ describe('CartSection', () => {
                 cartItems={[{ product: mockProduct, quantity: 2 }]}
                 onIncrease={() => {}}
                 onDecrease={() => {}}
+                onClearCart={() => {}}
             />
         );
 
@@ -48,10 +50,11 @@ describe('CartSection', () => {
                 cartItems={[{ product: mockProduct, quantity: 1 }]}
                 onIncrease={onIncrease}
                 onDecrease={() => {}}
+                onClearCart={() => {}}
             />
         );
 
-        const plusButton = screen.getAllByRole('button')[1]; // первый "+" после "-"
+        const plusButton = screen.getAllByRole('button')[1]; // "+" кнопка
         fireEvent.click(plusButton);
         expect(onIncrease).toHaveBeenCalledWith('1');
     });
@@ -64,11 +67,31 @@ describe('CartSection', () => {
                 cartItems={[{ product: mockProduct, quantity: 1 }]}
                 onIncrease={() => {}}
                 onDecrease={onDecrease}
+                onClearCart={() => {}}
             />
         );
 
-        const minusButton = screen.getAllByRole('button')[0];
+        const minusButton = screen.getAllByRole('button')[0]; // "-" кнопка
         fireEvent.click(minusButton);
         expect(onDecrease).toHaveBeenCalledWith('1');
+    });
+
+    it('calls onClearCart when Clear Cart button is clicked', () => {
+        const onClearCart = vi.fn();
+
+        render(
+            <CartSection
+                cartItems={[{ product: mockProduct, quantity: 1 }]}
+                onIncrease={() => {}}
+                onDecrease={() => {}}
+                onClearCart={onClearCart}
+            />
+        );
+
+        const clearButton = screen.getByText(/clear cart/i);
+        fireEvent.click(clearButton);
+        setTimeout(() => {
+            expect(onClearCart).toHaveBeenCalled();
+        }, 400);
     });
 });
