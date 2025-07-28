@@ -10,6 +10,32 @@
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.fadeOut {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cartItemWrapper {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.clearButton {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.clearButton:hover {
+    background-color: #d32f2f;
+}
 .cartContainer {
     width: 444px;
     height: 268px;

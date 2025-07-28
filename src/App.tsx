@@ -72,6 +72,7 @@ const App = () => {
                     cartItems={cart}
                     onIncrease={handleIncrease}
                     onDecrease={handleDecrease}
+                    onClearCart={() => setCart([])}
                 />
             )}
 
